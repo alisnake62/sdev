@@ -6,13 +6,13 @@ services:
       context: .
       args:
         SSH_USER_PASSWD: ${SSH_USER_PASSWD}
-    container_name: sdev_cerbo
+    container_name: sdev
     hostname: sdev
     restart: always
     ports:
       - ${SDEV_SSH_PORT}:22
     volumes:
-      - ~/dev_projects:/home/sshuser/dev_projects
+      - ~/dev:/home/sshuser/dev
 
 networks:
   default:
