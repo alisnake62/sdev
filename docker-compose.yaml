@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  sdev:
+    build:
+      context: .
+      args:
+        SSH_USER_PASSWD: ${SSH_USER_PASSWD}
+    container_name: sdev_cerbo
+    hostname: sdev
+    restart: always
+    ports:
+      - ${SDEV_SSH_PORT}:22
+    volumes:
+      - ~/dev_projects:/home/sshuser/dev_projects
+
+networks:
+  default:
+    name: dev_net
