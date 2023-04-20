@@ -14,6 +14,6 @@ services:
     volumes:
       - ~/dev:/home/sshuser/dev
 
-networks:
-  default:
-    name: dev_net
+# networks:
+#   default:
+#     name: dev_net

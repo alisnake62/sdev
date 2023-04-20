@@ -1,7 +1,7 @@
 FROM python:3.9
 
 # Install Linux Package
-RUN apt update && apt install openssh-server git sudo -y
+RUN apt update && apt install openssh-server git zip default-jdk sudo -y
 
 # Install poetry
 RUN pip3 install poetry
