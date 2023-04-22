@@ -45,7 +45,8 @@ alias sdev_up='docker-compose --env-file ~/sdev/.env -f ~/sdev/docker-compose.ya
 alias sdev_stop='docker stop sdev'
 alias sdev_start='docker start sdev'
 alias sdev_restart='docker restart sdev'
-alias sdev_connect='docker exec -ti sdev bash'
+alias sdev_connect='docker exec -ti --user sshuser sdev bash'
+alias sdev_connect_root='docker exec -ti sdev bash'
 ```
 ```
 source ~/.bash_aliases
