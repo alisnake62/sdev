@@ -32,7 +32,7 @@ vim authorized_keys
 ### Create Cerbo project volume folder
 ```
 cd ~
-mkdir dev-projects
+mkdir dev
 ```
 
 ### Create sdev aliases
